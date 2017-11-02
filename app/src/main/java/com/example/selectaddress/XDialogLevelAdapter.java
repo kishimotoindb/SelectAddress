@@ -11,14 +11,14 @@ import java.util.List;
  * Created by BigFaceBear on 2017.11.02
  */
 
-public class XDialogLevelAdapter extends BaseQuickAdapter<Object, BaseViewHolder> {
+public class XDialogLevelAdapter extends BaseQuickAdapter<String, BaseViewHolder> {
 
-    public XDialogLevelAdapter(@Nullable List<Object> data) {
+    public XDialogLevelAdapter(@Nullable List<String> data) {
         super(R.layout.item_x_dialog_level, data);
     }
 
     @Override
-    protected void convert(BaseViewHolder helper, Object item) {
-        helper.setText(R.id.tvContent, item.toString());
+    protected void convert(BaseViewHolder helper, String item) {
+        helper.setText(R.id.tvContent, item);
     }
 }
